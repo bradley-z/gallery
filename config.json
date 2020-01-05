@@ -25,6 +25,14 @@
       "path": "./photos/Photos/DSCF0236.jpg"
     },
     {
+      "height": 3264,
+      "compressed_path": "./photos/Photos/DSCF2225.jpg",
+      "width": 4896,
+      "compressed": false,
+      "placeholder_path": "./photos/Photos/DSCF2225.placeholder.jpg",
+      "path": "./photos/Photos/DSCF2225.jpg"
+    },
+    {
       "height": 4000,
       "compressed_path": "./photos/Photos/DSCF8697.jpg",
       "width": 6000,
