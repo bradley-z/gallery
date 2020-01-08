@@ -59,13 +59,13 @@ def get_images(path):
         p = './' + RELATIVE_PATH + '/' + path + '/' + img
         with open(PHOTO_PATH + '/' + path + '/' + img, 'rb') as f:
             _, width, height = getImageInfo(f.read())
-        if os.path.isfile(get_min_path(p)):
-            has_compressed = True
+        #  if os.path.isfile(get_min_path(p)):
+        #      has_compressed = False
         result.append({
             'width': width,
             'height': height,
-            'path': './' + RELATIVE_PATH + '/' + path + '/' + img,
-            'compressed_path': get_min_path(p),
+            'path': p,
+            'compressed_path': p,
             'compressed': has_compressed,
             'placeholder_path': get_placeholder_path(p)
         })
@@ -85,11 +85,17 @@ def run():
     for i, path in enumerate(dirs):
         print(str(i+1) + ': Processing photos for the album "{album}"'.format(
             album=path))
-        config[path] = get_images(path)
+        if len(dirs) == 1:
+            config[' '] = get_images(path)
 
-        print('   Done processing {l} photos for "{album}"\n'.format(
-            l=len(config[path]),
-            album=path))
+            print('   Done processing {l} photos for "Photos"\n'.format(
+                l=len(config[' '])))
+        else:
+            config[path] = get_images(path)
+
+            print('   Done processing {l} photos for "{album}"\n'.format(
+                l=len(config[path]),
+                album=path))
 
     print('Done processing all {length} albums'.format(length=len(dirs)))
     print('Writing files to {path} now...'.format(path=PATH + 'config.json'))
