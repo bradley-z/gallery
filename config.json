@@ -9,6 +9,14 @@
       "path": "./photos/Photos/DSCF0153.jpg"
     },
     {
+      "height": 4000,
+      "compressed_path": "./photos/Photos/DSCF2426.jpg",
+      "width": 6000,
+      "compressed": false,
+      "placeholder_path": "./photos/Photos/DSCF2426.placeholder.jpg",
+      "path": "./photos/Photos/DSCF2426.jpg"
+    },
+    {
       "height": 2937,
       "compressed_path": "./photos/Photos/DSCF2150.jpg",
       "width": 1958,
@@ -41,20 +49,12 @@
       "path": "./photos/Photos/DSCF8697.jpg"
     },
     {
-      "height": 4896,
-      "compressed_path": "./photos/Photos/DSCF0092.jpg",
-      "width": 3264,
+      "height": 3238,
+      "compressed_path": "./photos/Photos/DSCF1951.jpg",
+      "width": 2429,
       "compressed": false,
-      "placeholder_path": "./photos/Photos/DSCF0092.placeholder.jpg",
-      "path": "./photos/Photos/DSCF0092.jpg"
-    },
-    {
-      "height": 4540,
-      "compressed_path": "./photos/Photos/DSCF0079.jpg",
-      "width": 3027,
-      "compressed": false,
-      "placeholder_path": "./photos/Photos/DSCF0079.placeholder.jpg",
-      "path": "./photos/Photos/DSCF0079.jpg"
+      "placeholder_path": "./photos/Photos/DSCF1951.placeholder.jpg",
+      "path": "./photos/Photos/DSCF1951.jpg"
     },
     {
       "height": 3361,
